@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+@model IEnumerable<BaiKiemTra02.Models.LopHoc>
+
+@{
+    ViewData["Title"] = "Danh sách lớp học";
+}
+
+<h1>Danh sách lớp học</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Tên Lớp Học</th>
+            <th>Năm Nhập Học</th>
+            <th>Năm Ra Trường</th>
+            <th>Số Lượng Sinh Viên</th>
+            <th>Hành Động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var lopHoc in Model)
+        {
+            <tr>
+                <td>@lopHoc.TenLopHoc</td>
+                <td>@lopHoc.NamNhapHoc</td>
+                <td>@lopHoc.NamRaTruong</td>
+                <td>@lopHoc.SoLuongSinhVien</td>
+                <td>
+                    <a href="@Url.Action("Details", "LopHoc", new { id = lopHoc.Id })" class="btn btn-info">Xem</a>
+                    <a href="@Url.Action("Edit", "LopHoc", new { id = lopHoc.Id })" class="btn btn-warning">Sửa</a>
+                    <a href="@Url.Action("Delete", "LopHoc", new { id = lopHoc.Id })" class="btn btn-danger">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="@Url.Action("Create", "LopHoc")" class="btn btn-success">Thêm lớp học mới</a>

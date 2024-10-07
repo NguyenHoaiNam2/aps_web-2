@@ -1,0 +1,44 @@
+﻿@model BaiKiemTra02.Models.LopHoc
+
+@{
+    ViewData["Title"] = "Chỉnh sửa lớp học";
+}
+
+<h1>Chỉnh sửa lớp học</h1>
+
+<form asp-action="Edit" method="post">
+    <div class="form-group">
+        <label asp-for="TenLopHoc" class="control-label"></label>
+        <input asp-for="TenLopHoc" class="form-control" />
+        <span asp-validation-for="TenLopHoc" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NamNhapHoc" class="control-label"></label>
+        <input asp-for="NamNhapHoc" class="form-control" type="number" />
+        <span asp-validation-for="NamNhapHoc" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NamRaTruong" class="control-label"></label>
+        <input asp-for="NamRaTruong" class="form-control" type="number" />
+        <span asp-validation-for="NamRaTruong" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="SoLuongSinhVien" class="control-label"></label>
+        <input asp-for="SoLuongSinhVien" class="form-control" type="number" />
+        <span asp-validation-for="SoLuongSinhVien" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Lưu thay đổi" class="btn btn-primary" />
+        <a asp-action="Index" class="btn btn-secondary">Trở về danh sách</a>
+    </div>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,39 @@
+﻿@model BaiTap07a.Models.Theloai
+
+@{
+    ViewData["Title"] = "Thêm thể loại";
+}
+
+<div class="container">
+    <h3>Thêm thể loại</h3>
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <form asp-action="Create" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label asp-for="Name">Tên thể loại</label>
+            <input asp-for="Name" type="text" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="DateTime">Ngày tạo</label>
+            <input asp-for="DateTime" type="date" class="form-control" />
+            <span asp-validation-for="DateTime" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="ImageUrl">Hình ảnh mô tả</label>
+            <input type="file" name="ImageUrl" class="form-control" accept="image/*" />
+        </div>
+        <button type="submit" class="btn btn-primary">Tạo mới</button>
+    </form>
+</div>
+
+<div class="form-group">
+    <label for="ImageUrl">Hình ảnh</label>
+    <input type="file" class="form-control" id="ImageUrl" name="ImageUrl" />
+    <span asp-validation-for="ImageUrl" class="text-danger"></span>
+</div>
+
+
+@section Scripts {
+    @* Đưa vào các script xác thực *@
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Danh sách Thể loại</h1>
+
+<form asp-action="Search" method="get">
+    <input type="text" name="searchString" placeholder="Nhập thể loại cần tìm ..." />
+    <input type="submit" value="Tìm kiếm" />
+</form>
+
+<div class="container">
+    <table class="table table-bordered">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col">Tên Thể loại</th>
+                <th scope="col">Ngày tạo</th>
+                <th scope="col">Hình ảnh</th>
+                <th scope="col">Chức năng</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in ViewBag.Theloai)
+            {
+                <tr>
+                    <td width="25%">
+                        @item.Name
+                    </td>
+                    <td width="25%">
+                        @item.DateTime.ToString("dd/MM/yyyy")
+                    </td>
+                    <td width="25%">
+                        @if (!string.IsNullOrEmpty(item.ImageUrl))
+                        {
+                            <img src="@item.ImageUrl" alt="Image" width="100" />
+                        }
+                        else
+                        {
+                            <span>No Image</span>
+                        }
+                    </td>
+                    <td width="25%">
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">Edit</a>
+                        |
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">Delete</a>
+                        |
+                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm">Details</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a asp-controller="TheLoai" asp-action="Create" class="btn btn-primary">Thêm mới</a>
+</div>

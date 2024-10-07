@@ -1,0 +1,505 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BaiTapKiemTra01.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BaiTapKiemTra01.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\css\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\css\\ajax-loader.gif"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\css\\vendor.css",
+      "PackagePath": "staticwebassets\\css\\vendor.css"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\banner-image.png",
+      "PackagePath": "staticwebassets\\images\\banner-image.png"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\cart-item1.jpg",
+      "PackagePath": "staticwebassets\\images\\cart-item1.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\cart-item2.jpg",
+      "PackagePath": "staticwebassets\\images\\cart-item2.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\commentor-item1.jpg",
+      "PackagePath": "staticwebassets\\images\\commentor-item1.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\commentor-item2.jpg",
+      "PackagePath": "staticwebassets\\images\\commentor-item2.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\commentor-item3.jpg",
+      "PackagePath": "staticwebassets\\images\\commentor-item3.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\dhl.png",
+      "PackagePath": "staticwebassets\\images\\dhl.png"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\insta-item1.jpg",
+      "PackagePath": "staticwebassets\\images\\insta-item1.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\insta-item2.jpg",
+      "PackagePath": "staticwebassets\\images\\insta-item2.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\insta-item3.jpg",
+      "PackagePath": "staticwebassets\\images\\insta-item3.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\insta-item4.jpg",
+      "PackagePath": "staticwebassets\\images\\insta-item4.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\insta-item5.jpg",
+      "PackagePath": "staticwebassets\\images\\insta-item5.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\main-logo.png",
+      "PackagePath": "staticwebassets\\images\\main-logo.png"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\mastercard.jpg",
+      "PackagePath": "staticwebassets\\images\\mastercard.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\paypal.jpg",
+      "PackagePath": "staticwebassets\\images\\paypal.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\post-image.jpg",
+      "PackagePath": "staticwebassets\\images\\post-image.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\post-image1.jpg",
+      "PackagePath": "staticwebassets\\images\\post-image1.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\post-item1.jpg",
+      "PackagePath": "staticwebassets\\images\\post-item1.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\post-item2.jpg",
+      "PackagePath": "staticwebassets\\images\\post-item2.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\post-item3.jpg",
+      "PackagePath": "staticwebassets\\images\\post-item3.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\post-item4.jpg",
+      "PackagePath": "staticwebassets\\images\\post-item4.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\post-item5.jpg",
+      "PackagePath": "staticwebassets\\images\\post-item5.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\post-item6.jpg",
+      "PackagePath": "staticwebassets\\images\\post-item6.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\post-item7.jpg",
+      "PackagePath": "staticwebassets\\images\\post-item7.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\post-item8.jpg",
+      "PackagePath": "staticwebassets\\images\\post-item8.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\post-item9.jpg",
+      "PackagePath": "staticwebassets\\images\\post-item9.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\post-small-image1.jpg",
+      "PackagePath": "staticwebassets\\images\\post-small-image1.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\post-small-image2.jpg",
+      "PackagePath": "staticwebassets\\images\\post-small-image2.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\post-small-image3.jpg",
+      "PackagePath": "staticwebassets\\images\\post-small-image3.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\product-item1.jpg",
+      "PackagePath": "staticwebassets\\images\\product-item1.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\product-item10.jpg",
+      "PackagePath": "staticwebassets\\images\\product-item10.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\product-item2.jpg",
+      "PackagePath": "staticwebassets\\images\\product-item2.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\product-item3.jpg",
+      "PackagePath": "staticwebassets\\images\\product-item3.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\product-item4.jpg",
+      "PackagePath": "staticwebassets\\images\\product-item4.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\product-item5.jpg",
+      "PackagePath": "staticwebassets\\images\\product-item5.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\product-item6.jpg",
+      "PackagePath": "staticwebassets\\images\\product-item6.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\product-item7.jpg",
+      "PackagePath": "staticwebassets\\images\\product-item7.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\product-item8.jpg",
+      "PackagePath": "staticwebassets\\images\\product-item8.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\product-item9.jpg",
+      "PackagePath": "staticwebassets\\images\\product-item9.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\review-item1.jpg",
+      "PackagePath": "staticwebassets\\images\\review-item1.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\review-item2.jpg",
+      "PackagePath": "staticwebassets\\images\\review-item2.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\search-icon.png",
+      "PackagePath": "staticwebassets\\images\\search-icon.png"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\shippingcard.png",
+      "PackagePath": "staticwebassets\\images\\shippingcard.png"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\singel-product-item.jpg",
+      "PackagePath": "staticwebassets\\images\\singel-product-item.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\single-image1.png",
+      "PackagePath": "staticwebassets\\images\\single-image1.png"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\single-image2.jpg",
+      "PackagePath": "staticwebassets\\images\\single-image2.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\single-image3.jpg",
+      "PackagePath": "staticwebassets\\images\\single-image3.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\single-post.jpg",
+      "PackagePath": "staticwebassets\\images\\single-post.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\images\\visa.jpg",
+      "PackagePath": "staticwebassets\\images\\visa.jpg"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\js\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\js\\ajax-loader.gif"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\js\\jquery-1.11.0.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-1.11.0.min.js"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\js\\modernizr.js",
+      "PackagePath": "staticwebassets\\js\\modernizr.js"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\js\\plugins.js",
+      "PackagePath": "staticwebassets\\js\\plugins.js"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\BaiTapKiemTra01\\BaiTapKiemTra01\\wwwroot\\png\\tao.png",
+      "PackagePath": "staticwebassets\\png\\tao.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BaiTapKiemTra01.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BaiTapKiemTra01.props",
+      "PackagePath": "build\\BaiTapKiemTra01.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BaiTapKiemTra01.props",
+      "PackagePath": "buildMultiTargeting\\BaiTapKiemTra01.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BaiTapKiemTra01.props",
+      "PackagePath": "buildTransitive\\BaiTapKiemTra01.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

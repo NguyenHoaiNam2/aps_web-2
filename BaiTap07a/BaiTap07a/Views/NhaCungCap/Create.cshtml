@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewData["Title"] = "Create";
+}
+
+@model BaiTap07a.Models.NhaCungCap
+
+<h2>Thêm Nhà Cung Cấp</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="Ten">Tên nhà cung cấp</label>
+        <input asp-for="Ten" class="form-control" />
+        <span asp-validation-for="Ten" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="DiaChi">Địa chỉ</label>
+        <input asp-for="DiaChi" class="form-control" />
+        <span asp-validation-for="DiaChi" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="SDT">Số điện thoại</label>
+        <input asp-for="SDT" class="form-control" />
+        <span asp-validation-for="SDT" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Thêm</button>
+</form>
+
+<a href="@Url.Action("Index", "NhaCungCap")" class="btn btn-secondary">Quay lại danh sách</a>
+
+

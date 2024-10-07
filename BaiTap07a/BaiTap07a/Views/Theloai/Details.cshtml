@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewData["Title"] = "Details";
+}
+@model BaiTap07a.Models.Theloai
+
+<h2>Chi tiết thể loại</h2>
+
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">
+            Tên thể loại
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Name
+        </dd>
+
+        <dt class="col-sm-2">
+            Ngày tạo
+        </dt>
+        <dd class="col-sm-10">
+            @Model.DateTime.ToString("dd/MM/yyyy")
+        </dd>
+    </dl>
+</div>
+
+<a href="@Url.Action("Index", "Theloai")" class="btn btn-primary">Quay lại danh sách</a>
+
+

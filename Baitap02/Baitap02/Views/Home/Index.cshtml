@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <hr/>
+    <h2>Nguyen Hoai Nam 1822041128</h2>
+    <hr/>
+    
+    <h3>Bảng Cửu Chương</h3>
+    <div class="row">
+        @for (int i = 2; i <= 9; i++)
+        {
+            <div class="col-md-3">
+                <h4>Cửu chương @i</h4>
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Phép tính</th>
+                            <th>Kết quả</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for (int j = 1; j <= 10; j++)
+                        {
+                            <tr>
+                                <td>@i x @j</td>
+                                <td>@(i * j)</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+    </div>
+
+</div>

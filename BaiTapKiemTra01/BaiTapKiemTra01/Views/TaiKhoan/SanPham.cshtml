@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewData["Title"] = "SanPham";
+}
+<h1>SanPham</h1>
+<ul>
+    <li>
+        @ViewBag.name
+    </li>
+
+    <li><img src="~/png/tao.png" alt="tao" /></li>
+   
+    <li>
+        @ViewBag.price
+        
+    </li>
+</ul>
+
+<style>
+    .product-image {
+        max-width: auto%; 
+        height: auto; 
+        width: 100px; 
+        border: 1px solid #ddd; 
+        padding: 5px; 
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+    }
+</style>
+
+
+

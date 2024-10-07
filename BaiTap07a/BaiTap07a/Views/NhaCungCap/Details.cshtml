@@ -1,0 +1,43 @@
+﻿@model BaiTap07a.Models.NhaCungCap
+
+@{
+    ViewData["Title"] = "Chi tiết Nhà Cung Cấp";
+}
+
+<h1>Chi tiết Nhà Cung Cấp</h1>
+
+<div>
+    <h4>NhaCungCap</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Ten)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Ten)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DiaChi)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DiaChi)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SDT)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SDT)
+        </dd>
+
+       
+    </dl>
+</div>
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Edit</a> <!-- Nút chỉnh sửa -->
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a> <!-- Nút quay về danh sách -->
+</div>
+
+

@@ -1,0 +1,46 @@
+﻿@model BaiKiemTra02.Models.LopHoc
+
+@{
+    ViewData["Title"] = "Chi tiết lớp học";
+}
+
+<h1>Chi tiết lớp học</h1>
+
+<div>
+    <h4>Lớp Học</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Tên Lớp Học
+        </dt>
+        <dd class="col-sm-10">
+            @Model.TenLopHoc
+        </dd>
+
+        <dt class="col-sm-2">
+            Năm Nhập Học
+        </dt>
+        <dd class="col-sm-10">
+            @Model.NamNhapHoc
+        </dd>
+
+        <dt class="col-sm-2">
+            Năm Ra Trường
+        </dt>
+        <dd class="col-sm-10">
+            @Model.NamRaTruong
+        </dd>
+
+        <dt class="col-sm-2">
+            Số Lượng Sinh Viên
+        </dt>
+        <dd class="col-sm-10">
+            @Model.SoLuongSinhVien
+        </dd>
+    </dl>
+</div>
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Chỉnh sửa</a>
+    <a asp-action="Index" class="btn btn-secondary">Trở về danh sách</a>
+</div>

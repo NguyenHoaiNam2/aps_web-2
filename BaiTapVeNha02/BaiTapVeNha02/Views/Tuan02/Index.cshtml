@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<header>
+    <h2>BaiTapVeNha02</h2>
+    
+</header>
+
+<section>
+    <nav>
+        <ul>
+            <li><strong>Họ tên:</strong> @ViewBag.HoTen</li>
+            <li><strong>MSSV:</strong> @ViewBag.MSSV</li>
+            <li><a href="~/Profile">Profile</a></li>
+        </ul>
+    </nav>
+
+    <article>
+        <section>
+            <h2>@ViewBag.Title</h2>
+             <a href="~/Tuan02/Profile">
+            <img src="~/png/pokeball.png" style="width:150px; height:auto;" alt="Pokeball" />
+            </a>
+        </section>
+    </article>
+</section>
+
+<footer>
+    <p>Copyright &copy; @ViewBag.HoTen - @ViewBag.Nam</p>
+</footer>
+
+
