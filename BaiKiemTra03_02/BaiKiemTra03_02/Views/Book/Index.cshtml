@@ -1,0 +1,42 @@
+﻿@model IEnumerable<BaiKiemTra03_02.Models.Book>
+
+@{
+    ViewData["Title"] = "Danh Sách Sách";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Thêm Sách Mới</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Mã Sách</th>
+            <th>Tiêu Đề</th>
+            <th>Năm Xuất Bản</th>
+            <th>Tác Giả</th>
+            <th>Thể Loại</th>
+            <th>Giá</th>
+            <th>Hành Động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var book in Model)
+        {
+            <tr>
+                <td>@book.Id</td>
+                <td>@book.Title</td>
+                <td>@book.PublicationYear</td>
+                <td>@book.Author?.Name</td> <!-- Tên tác giả -->
+                <td>@book.TheLoai?.Name</td> <!-- Tên thể loại -->
+                <td>@book.Price.ToString("C")</td> <!-- Định dạng giá -->
+                <td>
+                    <a asp-action="Edit" asp-route-id="@book.Id" class="btn btn-warning">Sửa</a>
+                    <a asp-action="Delete" asp-route-id="@book.Id" class="btn btn-danger">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
