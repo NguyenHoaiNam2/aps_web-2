@@ -1,0 +1,51 @@
+﻿@model IEnumerable<ProjectA.Models.NhaCungCap>
+
+@{
+    ViewData["Title"] = "Quản lý Nhà Cung Cấp";
+}
+
+<h2>Quản lý Nhà Cung Cấp</h2>
+
+<!-- Nút thêm nhà cung cấp mới -->
+<a asp-action="Create" class="btn btn-primary">Thêm Nhà Cung Cấp</a>
+
+<table class="table table-bordered mt-3">
+    <thead>
+        <tr>
+            <th>STT</th>
+            <th>Tên</th>
+            <th>Ngày Thành Lập</th>
+            <th>Hình Ảnh</th>
+            <th>Hành Động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            int stt = 1; // Biến đếm để hiển thị STT
+        }
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@stt</td>
+                <td>@item.Name</td>
+                <td>@item.NgayThanhLap.ToString("dd/MM/yyyy")</td>
+                <td>
+                    @if (!string.IsNullOrEmpty(item.ImageUrl))
+                    {
+                        <img src="@item.ImageUrl" alt="@item.Name" width="100" />
+                    }
+                    else
+                    {
+                        <span>Không có ảnh</span>
+                    }
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">Sửa</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Xóa</a>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">Chi Tiết</a>
+                </td>
+            </tr>
+            stt++; // Tăng STT sau mỗi dòng
+        }
+    </tbody>
+</table>

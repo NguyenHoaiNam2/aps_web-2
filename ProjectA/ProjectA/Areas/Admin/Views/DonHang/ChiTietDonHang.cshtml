@@ -1,0 +1,27 @@
+﻿@model IEnumerable<ProjectA.Models.ChiTietHoaDon>
+
+<h2>Chi Tiết Đơn Hàng</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Hóa Đơn ID</th>
+            <th>Sản Phẩm ID</th>
+            <th>Số Lượng</th>
+            <th>Giá Sản Phẩm</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.HoaDonId</td>
+                <td>@item.SanPhamId</td>
+                <td>@item.Quantity</td>
+                <td>@item.ProductPrice</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,35 @@
+﻿@model ProjectA.Models.NhaCungCap
+
+@{
+    ViewData["Title"] = "Chi Tiết Nhà Cung Cấp";
+}
+
+<div class="container mt-5">
+    <h1 class="text-center">Chi Tiết Nhà Cung Cấp</h1>
+
+    <div class="row mt-4">
+        <!-- Hình ảnh nhà cung cấp -->
+        <div class="col-md-4">
+            @if (!string.IsNullOrEmpty(Model.ImageUrl))
+            {
+                <img src="@Model.ImageUrl" alt="@Model.Name" class="img-fluid" style="width: 50%; height: auto;" />
+
+            }
+            else
+            {
+                <p>Không có hình ảnh</p>
+            }
+        </div>
+
+        <!-- Thông tin nhà cung cấp -->
+        <div class="col-md-6">
+            <h2>@Model.Name</h2>
+            <p><strong>Tiểu sử:</strong> @Model.TieuSu</p>
+            <p><strong>Ngày thành lập:</strong> @Model.NgayThanhLap.ToString("dd/MM/yyyy")</p>
+
+            <div class="mt-4">
+                <a asp-action="NhaCungCap" class="btn btn-secondary">Quay lại</a>
+            </div>
+        </div>
+    </div>
+</div>

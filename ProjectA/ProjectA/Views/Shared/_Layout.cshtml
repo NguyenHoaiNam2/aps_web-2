@@ -7,12 +7,26 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/ProjectA.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <style>
+        html, body {
+            margin: 0; /* Bỏ margin cho html và body */
+            padding: 0; /* Bỏ padding cho html và body */
+            height: 100%; /* Đảm bảo chiều cao của body 100% */
+        }
+
+        footer {
+            margin-bottom: 0; /* Bỏ khoảng cách dưới cho footer */
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ProjectA</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/images/Designer.jpeg" alt="Logo" style="height: 100px;">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -20,39 +34,131 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Trang Chủ</a>
+                        </li>
+
+                        <!-- Tạo dropdown Subnav cho Admin -->
+                        @if (User.IsInRole("Admin")) // Kiểm tra nếu người dùng có vai trò Admin
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="adminDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Admin
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="adminDropdown">
+                                    <li>
+                                        <a class="dropdown-item" asp-area="Admin" asp-controller="TheLoai" asp-action="Index">Thêm Thể Loại</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" asp-area="Admin" asp-controller="SanPham" asp-action="Index">Thêm Sản Phẩm</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" asp-area="Admin" asp-controller="NhaCungCap" asp-action="Index">Thêm Nhà Cung Cấp</a>
+                                    </li>
+
+                                    <li><a class="dropdown-item" asp-area="Admin" asp-controller="DonHang" asp-action="Index">Đơn Hàng</a></li>
+
+                                </ul>
+                            </li>
+                        }
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="GioiThieu">Giới Thiệu Và Liên Hệ</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Danhsach">Danh Sách Sản Phẩm</a>
+                        </li>
+
+                        <vc:the-loai></vc:the-loai>
+
+                        
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="NhaCungCap">Nhà Cung Cấp</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="Admin" asp-controller="TheLoai" asp-action="Index">TheLoai</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="Admin" asp-controller="SanPham" asp-action="Index">TheLoai</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="GioHang" asp-action="Index">Giỏ Hàng</a>
                         </li>
                     </ul>
+
                     <partial name="_LoginPartial" />
                 </div>
             </div>
         </nav>
     </header>
+
+
+
     <div class="container">
-        <a asp-area="Identity" asp-page="/Account/Register" class="pl-3">Register</a>
-        <a asp-area="Identity" asp-page="/Account/Login" class="pl-3">Login</a>
         <main role="main" class="pb-3">
             @RenderBody()
+
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - ProjectA - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
+
+
+    <section id="contact">
+        <footer id="footer" class="py-5 bg-dark text-light">
+            <div class="container">
+                <div class="row">
+                    <!-- Address Column -->
+                    <div class="col-md-3">
+                        <h5>Địa chỉ</h5>
+                        <p><i class="fa fa-map-marker"></i> Dubai</p>
+                        <p><i class="fa fa-phone"></i> Call  (555) 612-2004</p>
+                        <p><i class="fa fa-envelope"></i> support@bookstore.com</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com" target="_blank">
+                                <i class="fab fa-facebook-f" style="font-size:24px; margin-right: 10px;"></i>
+                            </a>
+                            <a href="https://www.twitter.com" target="_blank">
+                                <i class="fab fa-twitter" style="font-size:24px; margin-right: 10px;"></i>
+                            </a>
+                            <a href="https://www.linkedin.com" target="_blank">
+                                <i class="fab fa-linkedin" style="font-size:24px; margin-right: 10px;"></i>
+                            </a>
+                            <a href="https://www.instagram.com" target="_blank">
+                                <i class="fab fa-instagram" style="font-size:24px;"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Links Column -->
+                    <div class="col-md-3">
+                        <h5>Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a asp-controller="Home" asp-action="Index" class="text-light">Trang Chủ</a></li>
+                            <li><a asp-controller="Home" asp-action="GioiThieu" class="text-light">Giới Thiệu</a></li>
+                            <li><a asp-controller="Home" asp-action="Danhsach" class="text-light">Danh Sách Sản Phẩm</a></li>
+                            <li><a asp-controller="Home" asp-action="NhaCungCap" class="text-light">Nhà Cung Cấp</a></li>
+                        </ul>
+                    </div>
+
+
+                    <!-- Info Column -->
+                    <div class="col-md-3">
+                        <h5>Thông tin</h5>
+                        <p>Chúng tôi mong muốn tạo ra một không gian dành cho những người yêu sách và đam mê kiến thức. Cửa hàng của chúng tôi tập trung vào việc cung cấp các đầu sách đa dạng, từ tiểu thuyết, khoa học, lịch sử, cho đến sách giáo dục, giúp bạn dễ dàng tiếp cận với tri thức và văn hóa thế giới.</p>
+                    </div>
+
+                    
+                </div>
+
+                <div class="text-center mt-4">
+                    <p>
+                        &copy; 2024 Tất cả quyền được bảo lưu. Bản quyền thuộc về [BBOOKK] - Chuyên cung cấp sách chất lượng.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </section>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+
+    <!-- FontAwesome for the search icon -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
 </body>
 </html>

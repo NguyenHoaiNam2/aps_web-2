@@ -1,0 +1,24 @@
+﻿@model IEnumerable<HoaDon>
+
+<div class="container">
+    <table class="table">
+        <thead>
+        </thead>
+        <tbody>
+            @foreach (var item in @Model)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Name</td>
+                    <td>@item.PhoneNumber</td>
+                    <td>@item.Address</td>
+                    <td>@item.OrderStatus</td>
+                    <td>@item.Total</td>
+                    <td>
+                        <a asp-action="ChiTietDonHang" asp-route-hoaDonId="@item.Id">Chi Tiết Đơn Hàng</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

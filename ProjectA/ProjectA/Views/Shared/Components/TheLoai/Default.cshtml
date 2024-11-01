@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Default";
+}
+
+@model IEnumerable<TheLoai>
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle text-white" href="#" id="theloaiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+       Thể Loại Sách
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="theloaiDropdown">
+        @foreach (var item in Model)
+        {
+            <li>
+                <a class="dropdown-item" asp-controller="Home"
+                   asp-action="FilterByTheLoai"
+                   asp-route-id="@item.Id">@item.Name</a>
+            </li>
+        }
+    </ul>
+</li>

@@ -1,8 +1,433 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Slideshow";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
+<!-- Slideshow Section -->
+<div id="productSlideshow" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" style="margin-top: 25px;">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_thumbnails/horizontal_poster-050624138f6b-1606793288155-R5uLsI41.png" class="d-block w-100" alt="Image 1">
+        </div>
+        <div class="carousel-item">
+            <img src="https://images.fbox.fpt.vn/wordpress-blog/2023/08/dao-hai-tac.jpg" class="d-block w-100" alt="Image 2">
+        </div>
+        <div class="carousel-item">
+            <img src="https://m.media-amazon.com/images/S/pv-target-images/334a2323946d4a7c36865bdbed1d612f3c8bdb7024f57df389a9bc5da30ce09f.jpg" class="d-block w-100" alt="Image 3">
+        </div>
+        <div class="carousel-item">
+            <img src="https://cdn.tgdd.vn/Files/2023/08/02/1540758/nhung-cau-noi-hay-nhat-trong-phim-tham-tu-lung-danh-conan-202308021125158172.jpg" class="d-block w-100" alt="Image 4">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#productSlideshow" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#productSlideshow" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </a>
 </div>
+
+@section Scripts {
+    <!-- Thêm JavaScript của Bootstrap nếu chưa có -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+}
+
+
+
+@model IEnumerable<ProjectA.Models.SanPham>
+<!-- Phần Manga -->
+<div class="container product-container" style="margin-top: 50px; position: relative;">
+    <h2 class="text-center">Truyện tranh Nhật Bản</h2>
+    <div class="row">
+        <div>
+            <a href="javascript:void(0);" class="position-absolute top-50 start-0 translate-middle-y" style="z-index: 1; font-size: 2rem; padding-left: 20px;" id="prevBtnManga">
+                <i class="fas fa-chevron-left"></i>
+            </a>
+        </div>
+        <div class="col-12" style="overflow: hidden; padding: 0 3rem;">
+            <div class="border p-3" style="border: 1px solid #ccc; border-radius: 5px; overflow: hidden;">
+                <div class="d-flex" id="product-container-manga" style="scroll-behavior: smooth; width: 100%; overflow-x: hidden;">
+                    @foreach (var item in Model.Where(p => p.TheLoai.Name == "Manga" && p.Name.Contains("Tập 1")))
+                    {
+                        <div class="flex-shrink-0" style="min-width: 15rem; margin-right: 10px;">
+                            <div class="card text-center" style="width: 15rem; margin: auto;">
+                                <a asp-action="Details" asp-route-sanphamId="@item.Id">
+                                    <img src="@item.ImageUrl" alt="Product image" class="product-image card-img-top">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">@item.Name</h5>
+                                    <h6 class="card-title text-danger">@item.Price.ToString("N0") đ</h6>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+        <div>
+            <a href="javascript:void(0);" class="position-absolute top-50 end-0 translate-middle-y" style="z-index: 1; font-size: 2rem; padding-right: 20px;" id="nextBtnManga">
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Mã JavaScript cho phần Manga -->
+<script>
+    const productContainerManga = document.getElementById('product-container-manga');
+    const scrollAmountManga = 200; // Số pixel để cuộn
+
+    document.getElementById('prevBtnManga').onclick = function () {
+        productContainerManga.scrollBy({ left: -scrollAmountManga, behavior: 'smooth' });
+    };
+
+    document.getElementById('nextBtnManga').onclick = function () {
+        productContainerManga.scrollBy({ left: scrollAmountManga, behavior: 'smooth' });
+    };
+</script>
+
+
+<!-- Mã JavaScript cho phần Manga -->
+<script>
+    const productContainerManga = document.getElementById('product-container-manga');
+    const scrollAmountManga = 200; // Số pixel để cuộn
+
+    document.getElementById('prevBtnManga').onclick = function () {
+        productContainerManga.scrollBy({ left: -scrollAmountManga, behavior: 'smooth' });
+    };
+
+    document.getElementById('nextBtnManga').onclick = function () {
+        productContainerManga.scrollBy({ left: scrollAmountManga, behavior: 'smooth' });
+    };
+</script>
+
+
+<!-- Phần Tiểu Thuyết -->
+<div class="container product-container" style="margin-top: 25px; position: relative;">
+    <h2 class="text-center">Tiểu Thuyết</h2>
+    <div class="row">
+        <div>
+            <a href="javascript:void(0);" class="position-absolute top-50 start-0 translate-middle-y" style="z-index: 1; font-size: 2rem; padding-left: 20px;" id="prevBtnTieuThuyet">
+                <i class="fas fa-chevron-left"></i>
+            </a>
+        </div>
+        <div class="col-12" style="overflow: hidden; padding: 0 3rem;">
+            <div class="border p-3" style="border: 1px solid #ccc; border-radius: 5px; overflow: hidden;">
+                <div class="d-flex" id="product-container-tieuthuyet" style="scroll-behavior: smooth; width: 100%; overflow-x: hidden;">
+                    @foreach (var item in Model.Where(p => p.TheLoai.Name == "Tiểu Thuyết"))
+                    {
+                        <div class="flex-shrink-0" style="min-width: 15rem; margin-right: 10px;">
+                            <div class="card text-center" style="width: 15rem; margin: auto;">
+                                <a asp-action="Details" asp-route-sanphamId="@item.Id">
+                                    <img src="@item.ImageUrl" alt="Product image" class="product-image card-img-top">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">@item.Name</h5>
+                                    <h6 class="card-title text-danger">@item.Price.ToString("N0") đ</h6>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+        <div>
+            <a href="javascript:void(0);" class="position-absolute top-50 end-0 translate-middle-y" style="z-index: 1; font-size: 2rem; padding-right: 20px;" id="nextBtnTieuThuyet">
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Mã JavaScript cho phần Tiểu Thuyết -->
+<script>
+    const productContainerTieuThuyet = document.getElementById('product-container-tieuthuyet');
+    const scrollAmountTieuThuyet = 200; // Số pixel để cuộn
+
+    document.getElementById('prevBtnTieuThuyet').onclick = function () {
+        productContainerTieuThuyet.scrollBy({ left: -scrollAmountTieuThuyet, behavior: 'smooth' });
+    };
+
+    document.getElementById('nextBtnTieuThuyet').onclick = function () {
+        productContainerTieuThuyet.scrollBy({ left: scrollAmountTieuThuyet, behavior: 'smooth' });
+    };
+</script>
+
+
+
+<div style="margin-top: 25px;">
+    <a asp-action="DanhSach">
+        <img src="https://theme.hstatic.net/200000343865/1001052087/14/banner_home_pro_3.jpg?v=1486" style="width:100%" />
+    </a>
+</div>
+
+
+<!-- Phần Thiếu Nhi -->
+<div class="container product-container" style="margin-top: 25px; position: relative;">
+    <h2 class="text-center">Sách Thiếu Nhi</h2>
+    <div class="row">
+        <div>
+            <a href="javascript:void(0);" class="position-absolute top-50 start-0 translate-middle-y" style="z-index: 1; font-size: 2rem; padding-left: 20px;" id="prevBtnThieuNhi">
+                <i class="fas fa-chevron-left"></i>
+            </a>
+        </div>
+        <div class="col-12" style="overflow: hidden; padding: 0 3rem;">
+            <div class="border p-3" style="border: 1px solid #ccc; border-radius: 5px; overflow: hidden;">
+                <div class="d-flex" id="product-container-thieunhi" style="scroll-behavior: smooth; width: 100%; overflow-x: hidden;">
+                    @foreach (var item in Model.Where(p => p.TheLoai.Name == "Thiếu Nhi"))
+                    {
+                        <div class="flex-shrink-0" style="min-width: 15rem; margin-right: 10px;">
+                            <div class="card text-center" style="width: 15rem; margin: auto;">
+                                <a asp-action="Details" asp-route-sanphamId="@item.Id">
+                                    <img src="@item.ImageUrl" alt="Product image" class="product-image card-img-top">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">@item.Name</h5>
+                                    <h6 class="card-title text-danger">@item.Price.ToString("N0") đ</h6>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+        <div>
+            <a href="javascript:void(0);" class="position-absolute top-50 end-0 translate-middle-y" style="z-index: 1; font-size: 2rem; padding-right: 20px;" id="nextBtnThieuNhi">
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Mã JavaScript cho phần Thiếu Nhi -->
+<script>
+    const productContainerThieuNhi = document.getElementById('product-container-thieunhi');
+    const scrollAmountThieuNhi = 200; // Số pixel để cuộn
+
+    document.getElementById('prevBtnThieuNhi').onclick = function () {
+        productContainerThieuNhi.scrollBy({ left: -scrollAmountThieuNhi, behavior: 'smooth' });
+    };
+
+    document.getElementById('nextBtnThieuNhi').onclick = function () {
+        productContainerThieuNhi.scrollBy({ left: scrollAmountThieuNhi, behavior: 'smooth' });
+    };
+</script>
+
+<!-- Phần Combo Sách -->
+<div class="container product-container" style="margin-top: 25px; position: relative;">
+    <h2 class="text-center">Combo Sách</h2>
+    <div class="row">
+        <div>
+            <a href="javascript:void(0);" class="position-absolute top-50 start-0 translate-middle-y" style="z-index: 1; font-size: 2rem; padding-left: 20px;" id="prevBtnComboSach">
+                <i class="fas fa-chevron-left"></i>
+            </a>
+        </div>
+        <div class="col-12" style="overflow: hidden; padding: 0 3rem;">
+            <div class="border p-3" style="border: 1px solid #ccc; border-radius: 5px; overflow: hidden;">
+                <div class="d-flex" id="product-container-combosach" style="scroll-behavior: smooth; width: 100%; overflow-x: hidden;">
+                    @foreach (var item in Model.Where(p => p.TheLoai.Name == "Combo Sách"))
+                    {
+                        <div class="flex-shrink-0" style="min-width: 15rem; margin-right: 10px;">
+                            <div class="card text-center" style="width: 15rem; margin: auto;">
+                                <a asp-action="Details" asp-route-sanphamId="@item.Id">
+                                    <img src="@item.ImageUrl" alt="Product image" class="product-image card-img-top">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">@item.Name</h5>
+                                    <h6 class="card-title text-danger">@item.Price.ToString("N0") đ</h6>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+        <div>
+            <a href="javascript:void(0);" class="position-absolute top-50 end-0 translate-middle-y" style="z-index: 1; font-size: 2rem; padding-right: 20px;" id="nextBtnComboSach">
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Mã JavaScript cho phần Combo Sách -->
+<script>
+    const productContainerComboSach = document.getElementById('product-container-combosach');
+    const scrollAmountComboSach = 200; // Số pixel để cuộn
+
+    document.getElementById('prevBtnComboSach').onclick = function () {
+        productContainerComboSach.scrollBy({ left: -scrollAmountComboSach, behavior: 'smooth' });
+    };
+
+    document.getElementById('nextBtnComboSach').onclick = function () {
+        productContainerComboSach.scrollBy({ left: scrollAmountComboSach, behavior: 'smooth' });
+    };
+</script>
+
+<div style="margin-top: 25px;">
+    <a asp-action="DanhSach">
+        <img src="https://theme.hstatic.net/200000343865/1001052087/14/banner_home_pro_6.jpg?v=1486" style="width:100%" />
+    </a>
+</div>
+
+<!-- Phần Khoa Học -->
+<div class="container product-container" style="margin-top: 25px; position: relative;">
+    <h2 class="text-center">Khoa Học</h2>
+    <div class="row">
+        <div>
+            <a href="javascript:void(0);" class="position-absolute top-50 start-0 translate-middle-y" style="z-index: 1; font-size: 2rem; padding-left: 20px;" id="prevBtnKhoaHoc">
+                <i class="fas fa-chevron-left"></i>
+            </a>
+        </div>
+        <div class="col-12" style="overflow: hidden; padding: 0 3rem;">
+            <div class="border p-3" style="border: 1px solid #ccc; border-radius: 5px; overflow: hidden;">
+                <div class="d-flex" id="product-container-khoahoc" style="scroll-behavior: smooth; width: 100%; overflow-x: hidden;">
+                    @foreach (var item in Model.Where(p => p.TheLoai.Name == "Khoa Học"))
+                    {
+                        <div class="flex-shrink-0" style="min-width: 15rem; margin-right: 10px;">
+                            <div class="card text-center" style="width: 15rem; margin: auto;">
+                                <a asp-action="Details" asp-route-sanphamId="@item.Id">
+                                    <img src="@item.ImageUrl" alt="Product image" class="product-image card-img-top">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">@item.Name</h5>
+                                    <h6 class="card-title text-danger">@item.Price.ToString("N0") đ</h6>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+        <div>
+            <a href="javascript:void(0);" class="position-absolute top-50 end-0 translate-middle-y" style="z-index: 1; font-size: 2rem; padding-right: 20px;" id="nextBtnKhoaHoc">
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Mã JavaScript cho phần Khoa Học -->
+<script>
+    const productContainerKhoaHoc = document.getElementById('product-container-khoahoc');
+    const scrollAmountKhoaHoc = 200; // Số pixel để cuộn
+
+    document.getElementById('prevBtnKhoaHoc').onclick = function () {
+        productContainerKhoaHoc.scrollBy({ left: -scrollAmountKhoaHoc, behavior: 'smooth' });
+    };
+
+    document.getElementById('nextBtnKhoaHoc').onclick = function () {
+        productContainerKhoaHoc.scrollBy({ left: scrollAmountKhoaHoc, behavior: 'smooth' });
+    };
+</script>
+
+<!-- Phần Văn Học -->
+<div class="container product-container" style="margin-top: 25px; position: relative;">
+    <h2 class="text-center">Văn Học</h2>
+    <div class="row">
+        <div>
+            <a href="javascript:void(0);" class="position-absolute top-50 start-0 translate-middle-y" style="z-index: 1; font-size: 2rem; padding-left: 20px;" id="prevBtnVanHoc">
+                <i class="fas fa-chevron-left"></i>
+            </a>
+        </div>
+        <div class="col-12" style="overflow: hidden; padding: 0 3rem;">
+            <div class="border p-3" style="border: 1px solid #ccc; border-radius: 5px; overflow: hidden;">
+                <div class="d-flex" id="product-container-vanhoc" style="scroll-behavior: smooth; width: 100%; overflow-x: hidden;">
+                    @foreach (var item in Model.Where(p => p.TheLoai.Name == "Văn Học"))
+                    {
+                        <div class="flex-shrink-0" style="min-width: 15rem; margin-right: 10px;">
+                            <div class="card text-center" style="width: 15rem; margin: auto;">
+                                <a asp-action="Details" asp-route-sanphamId="@item.Id">
+                                    <img src="@item.ImageUrl" alt="Product image" class="product-image card-img-top">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">@item.Name</h5>
+                                    <h6 class="card-title text-danger">@item.Price.ToString("N0") đ</h6>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+        <div>
+            <a href="javascript:void(0);" class="position-absolute top-50 end-0 translate-middle-y" style="z-index: 1; font-size: 2rem; padding-right: 20px;" id="nextBtnVanHoc">
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Mã JavaScript cho phần Văn Học -->
+<script>
+    const productContainerVanHoc = document.getElementById('product-container-vanhoc');
+    const scrollAmountVanHoc = 200; // Số pixel để cuộn
+
+    document.getElementById('prevBtnVanHoc').onclick = function () {
+        productContainerVanHoc.scrollBy({ left: -scrollAmountVanHoc, behavior: 'smooth' });
+    };
+
+    document.getElementById('nextBtnVanHoc').onclick = function () {
+        productContainerVanHoc.scrollBy({ left: scrollAmountVanHoc, behavior: 'smooth' });
+    };
+</script>
+
+<div style="margin-top: 25px;">
+    <a asp-action="DanhSach">
+        <img src="https://sobee.vn/wp-content/uploads/2020/03/04-KetNoi-banner.jpg" style="width:100%" />
+    </a>
+</div>
+
+<!-- Phần Sách Giáo Khoa -->
+<div class="container product-container" style="margin-top: 25px; position: relative;">
+    <h2 class="text-center">Sách Giáo Khoa</h2>
+    <div class="row">
+        <div>
+            <a href="javascript:void(0);" class="position-absolute top-50 start-0 translate-middle-y" style="z-index: 1; font-size: 2rem; padding-left: 20px;" id="prevBtnSachGiaoKhoa">
+                <i class="fas fa-chevron-left"></i>
+            </a>
+        </div>
+        <div class="col-12" style="overflow: hidden; padding: 0 3rem;">
+            <div class="border p-3" style="border: 1px solid #ccc; border-radius: 5px; overflow: hidden;">
+                <div class="d-flex" id="product-container-sachgiaokhoa" style="scroll-behavior: smooth; width: 100%; overflow-x: hidden;">
+                    @foreach (var item in Model.Where(p => p.TheLoai.Name == "Sách Giáo Khoa"))
+                    {
+                        <div class="flex-shrink-0" style="min-width: 15rem; margin-right: 10px;">
+                            <div class="card text-center" style="width: 15rem; margin: auto;">
+                                <a asp-action="Details" asp-route-sanphamId="@item.Id">
+                                    <img src="@item.ImageUrl" alt="Product image" class="product-image card-img-top">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">@item.Name</h5>
+                                    <h6 class="card-title text-danger">@item.Price.ToString("N0") đ</h6>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+        <div>
+            <a href="javascript:void(0);" class="position-absolute top-50 end-0 translate-middle-y" style="z-index: 1; font-size: 2rem; padding-right: 20px;" id="nextBtnSachGiaoKhoa">
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Mã JavaScript cho phần Sách Giáo Khoa -->
+<script>
+    const productContainerSachGiaoKhoa = document.getElementById('product-container-sachgiaokhoa');
+    const scrollAmountSachGiaoKhoa = 200; // Số pixel để cuộn
+
+    document.getElementById('prevBtnSachGiaoKhoa').onclick = function () {
+        productContainerSachGiaoKhoa.scrollBy({ left: -scrollAmountSachGiaoKhoa, behavior: 'smooth' });
+    };
+
+    document.getElementById('nextBtnSachGiaoKhoa').onclick = function () {
+        productContainerSachGiaoKhoa.scrollBy({ left: scrollAmountSachGiaoKhoa, behavior: 'smooth' });
+    };
+</script>

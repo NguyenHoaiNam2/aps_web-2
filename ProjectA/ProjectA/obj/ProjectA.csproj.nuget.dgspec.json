@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\ProjectA\\ProjectA\\ProjectA.csproj": {}
+    "D:\\Hoc\\wed\\codewed\\New folder\\aps_web-2\\ProjectA\\ProjectA\\ProjectA.csproj": {}
   },
   "projects": {
-    "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\ProjectA\\ProjectA\\ProjectA.csproj": {
+    "D:\\Hoc\\wed\\codewed\\New folder\\aps_web-2\\ProjectA\\ProjectA\\ProjectA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\ProjectA\\ProjectA\\ProjectA.csproj",
+        "projectUniqueName": "D:\\Hoc\\wed\\codewed\\New folder\\aps_web-2\\ProjectA\\ProjectA\\ProjectA.csproj",
         "projectName": "ProjectA",
-        "projectPath": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\ProjectA\\ProjectA\\ProjectA.csproj",
+        "projectPath": "D:\\Hoc\\wed\\codewed\\New folder\\aps_web-2\\ProjectA\\ProjectA\\ProjectA.csproj",
         "packagesPath": "C:\\Users\\nnam6\\.nuget\\packages\\",
-        "outputPath": "D:\\Hoc\\wed\\codewed\\baitap\\aps_web-2\\ProjectA\\ProjectA\\obj\\",
+        "outputPath": "D:\\Hoc\\wed\\codewed\\New folder\\aps_web-2\\ProjectA\\ProjectA\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nnam6\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -48,19 +48,23 @@
           "dependencies": {
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.10, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.10, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[8.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer.Design": {
               "target": "Package",
@@ -68,15 +72,17 @@
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.10, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[8.0.5, )"
+              "version": "[8.0.6, )"
             }
           },
           "imports": [

@@ -1,0 +1,43 @@
+﻿@model IEnumerable<ProjectA.Models.SanPham>
+
+<div class="container">
+    <h1>Danh Sách Sản Phẩm</h1>
+
+    <form asp-action="Danhsach" method="get">
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <input type="text" name="searchString" class="form-control" placeholder="Tìm kiếm theo tên sản phẩm" />
+            </div>
+            <div class="col-md-4">
+                <select name="sortOrder" class="form-control">
+                    <option value="">Sắp xếp theo</option>
+                    <option value="name_asc">Tên: A - Z</option> <!-- Đã sửa ở đây -->
+                    <option value="name_desc">Tên: Z - A</option>
+                    <option value="price">Giá: Thấp đến Cao</option>
+                    <option value="price_desc">Giá: Cao đến Thấp</option>
+                </select>
+            </div>
+
+            <div class="col-md-4">
+                <button type="submit" class="btn btn-primary">Tìm Kiếm</button>
+            </div>
+        </div>
+    </form>
+
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-3">
+                <div class="card" style="width: 15rem;">
+                    <a asp-action="Details" asp-route-sanphamId="@item.Id">
+                        <img src="@item.ImageUrl" alt="Product image" class="card-img-top" />
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Name</h5>
+                        <h6 class="card-title text-danger">@item.Price.ToString("N0") đ</h6> <!-- Giá tiền màu đỏ -->
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

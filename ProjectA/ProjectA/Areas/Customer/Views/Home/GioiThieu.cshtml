@@ -1,0 +1,68 @@
+﻿@{
+    ViewData["Title"] = "Giới Thiệu";
+}
+
+<!-- Thêm lớp màu nền dịu và khoảng cách lớn -->
+<div class="container bg-light py-5 rounded shadow-sm">
+
+    <!-- Tiêu đề chính với kiểu chữ đẹp hơn và khoảng cách -->
+    <h1 class="display-4 text-center text-primary font-weight-bold">Giới thiệu về cửa hàng sách của chúng tôi</h1>
+
+    <!-- Phần giới thiệu ngắn gọn với màu sắc nhẹ nhàng hơn -->
+    <p class="lead text-center mt-3 text-secondary">
+        Chào mừng bạn đến với cửa hàng sách trực tuyến của chúng tôi! Chúng tôi cam kết mang đến cho bạn những đầu sách phong phú, chất lượng và dịch vụ tận tâm nhất.
+    </p>
+
+    <!-- Hình ảnh minh họa với đường viền -->
+    <div class="text-center my-4">
+        <img src="~/images/Designer.jpeg" alt="Hình ảnh cửa hàng sách" class="img-fluid rounded border border-primary shadow" style="max-width: 35%;">
+    </div>
+
+    <!-- Phần nội dung chi tiết với hiệu ứng chia mục rõ ràng -->
+    <section class="mt-5">
+        <h2 class="h4 text-primary font-weight-bold">Sứ mệnh của chúng tôi</h2>
+        <p class="text-muted">
+            Chúng tôi mong muốn tạo ra một không gian dành cho những người yêu sách và đam mê kiến thức. Cửa hàng của chúng tôi tập trung vào việc cung cấp các đầu sách đa dạng, từ tiểu thuyết, khoa học, lịch sử, cho đến sách giáo dục, giúp bạn dễ dàng tiếp cận với tri thức và văn hóa thế giới.
+        </p>
+    </section>
+
+    <section class="mt-4">
+        <h2 class="h4 text-primary font-weight-bold">Các loại sách chúng tôi cung cấp</h2>
+        <ul class="text-muted">
+            <li><strong>Tiểu thuyết:</strong> Đa dạng các thể loại từ lãng mạn, kinh dị, khoa học viễn tưởng, đến phiêu lưu mạo hiểm.</li>
+            <li><strong>Sách giáo dục:</strong> Bao gồm sách học ngoại ngữ, kỹ năng mềm, và nhiều loại sách giáo trình khác.</li>
+            <li><strong>Sách khoa học:</strong> Được viết bởi các chuyên gia và giáo sư, cung cấp kiến thức về các lĩnh vực như vật lý, sinh học, công nghệ.</li>
+            <li><strong>Sách lịch sử:</strong> Tìm hiểu về lịch sử thế giới và văn hóa qua các thời kỳ.</li>
+            <li><strong>Sách thiếu nhi:</strong> Những câu chuyện và sách giáo dục thú vị dành cho trẻ em ở nhiều độ tuổi.</li>
+        </ul>
+    </section>
+
+    <section class="mt-4">
+        <h2 class="h4 text-primary font-weight-bold">Liên hệ với chúng tôi</h2>
+        <p class="text-muted">
+            Nếu bạn có bất kỳ câu hỏi nào, vui lòng liên hệ với chúng tôi qua địa chỉ email:
+            <a href="mailto:support@bookstore.com" class="text-decoration-none text-info">support@bookstore.com</a>
+            hoặc gọi điện đến số điện thoại: <strong>(555) 612-2004</strong>.
+        </p>
+        <p class="text-muted">
+            Chúng tôi mong muốn phục vụ bạn với những trải nghiệm mua sách tuyệt vời nhất!
+        </p>
+    </section>
+
+    <section class="mt-5">
+        <h2 class="h4 text-primary font-weight-bold">Vị trí của chúng tôi trên Google Maps</h2>
+        <p class="text-muted">Bạn có thể ghé thăm cửa hàng chúng tôi tại Dubai, Các tiểu Vương quốc Ả rập Thống nhất. Vui lòng xem bản đồ dưới đây để biết thêm chi tiết:</p>
+
+        <!-- Nhúng bản đồ Google Maps bằng iframe với viền và bóng -->
+        <div class="text-center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115204.55224480353!2d55.1309924!3d25.1402293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20C%C3%A1c%20ti%E1%BB%83u%20V%C6%B0%C6%A1ng%20qu%E1%BB%91c%20%E1%BA%A2%20r%E1%BA%ADp%20Th%E1%BB%91ng%20nh%E1%BA%A5t!5e0!3m2!1svi!2s!4v1698411165664!5m2!1svi!2s"
+                    width="100%"
+                    height="450"
+                    style="border: 2px solid #007bff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+</div>

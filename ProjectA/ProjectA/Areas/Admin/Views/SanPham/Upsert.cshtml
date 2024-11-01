@@ -35,10 +35,20 @@
             <span asp-validation-for="TheLoaiId" class="text-danger"></span>
         </div>
 
-        <button type="submit" class="btn btn-primary">
-            @(Model != null && Model.Id == 0 ? "Tạo mới" : "Cập nhật")
-        </button>
-        <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+        <div class="form-group">
+            <label asp-for="NhaCungCapId">Nhà cung cấp</label>
+            <select asp-for="NhaCungCapId" asp-items="@ViewBag.DsNhaCungCap" class="form-control">
+                <option value="">Chọn nhà cung cấp</option>
+            </select>
+            <span asp-validation-for="NhaCungCapId" class="text-danger"></span>
+        </div>
+
+        <div>
+            <button type="submit" class="btn btn-primary">
+                @(Model != null && Model.Id == 0 ? "Tạo mới" : "Cập nhật")
+            </button>
+            <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+        </div>
     </form>
 </div>
 

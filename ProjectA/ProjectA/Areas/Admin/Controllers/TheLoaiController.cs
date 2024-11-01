@@ -1,8 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ProjectA.Data;
-using ProjectA.Models; // Đảm bảo rằng bạn đã thêm thư viện chứa model TheLoai
-using System.Linq;
+using ProjectA.Models;
 
 namespace ProjectA.Areas.Admin.Controllers
 {
@@ -10,7 +9,7 @@ namespace ProjectA.Areas.Admin.Controllers
     [Authorize(Roles = "Admin")]
     public class TheLoaiController : Controller
     {
-        
+
         private readonly ApplicationDbContext _db;
 
         public TheLoaiController(ApplicationDbContext db)
@@ -85,28 +84,9 @@ namespace ProjectA.Areas.Admin.Controllers
             return View(obj);
         }
 
-        // DELETE: Hiển thị form xác nhận xóa thể loại
-        public IActionResult Delete(int? id)
-        {
-            if (id == null || id == 0)
-            {
-                return NotFound();
-            }
-
-            var theloaiFromDb = _db.TheLoai.Find(id);
-
-            if (theloaiFromDb == null)
-            {
-                return NotFound();
-            }
-
-            return View(theloaiFromDb);
-        }
-
-        // DELETE: Xóa thể loại khỏi database
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public IActionResult DeletePost(int? id)
+        // DELETE: Xóa thể loại khỏi database qua HTTP GET
+        [HttpGet]
+        public IActionResult Delete(int id)
         {
             var theloai = _db.TheLoai.Find(id);
 
@@ -119,6 +99,7 @@ namespace ProjectA.Areas.Admin.Controllers
             _db.SaveChanges();
             return RedirectToAction("Index");
         }
+
 
         // DETAILS: Hiển thị chi tiết thể loại
         public IActionResult Details(int? id)

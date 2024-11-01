@@ -1,0 +1,28 @@
+﻿@model IEnumerable<ProjectA.Models.NhaCungCap>
+
+@{
+    ViewData["Title"] = "Danh Sách Nhà Cung Cấp";
+}
+
+<div class="container">
+    <h1>Danh Sách Nhà Cung Cấp</h1>
+
+    <!-- Hiển thị danh sách nhà cung cấp -->
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-3">
+                <div class="card" style="width: 12rem;">
+                    <a asp-action="DetailsNhaCungCap" asp-route-id="@item.Id">
+                        <img src="@item.ImageUrl" alt="@item.Name" class="card-img-top" />
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Name</h5>
+                        @* <p class="card-text">@item.TieuSu</p>
+                        <h6 class="card-title">Ngày thành lập: @item.NgayThanhLap.ToString("dd/MM/yyyy")</h6> *@
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

@@ -7,7 +7,7 @@
 <div class="container">
     <div class="row mb-3">
         <div class="col-md-12">
-            <a href="/TheLoai/Create" class="btn btn-primary">Tạo Thể Loại Mới</a>
+            <a href="TheLoai/Create" class="btn btn-primary">Tạo Thể Loại Mới</a>
         </div>
     </div>
 
@@ -28,9 +28,9 @@
                         <td>@item.Name</td>
                         <td>@String.Format("{0:dd/MM/yyyy}", item.DateCreated)</td>
                         <td>
-                            <a href="/TheLoai/Details/@item.Id" class="btn btn-info">Chi Tiết</a>
-                            <a href="/TheLoai/Edit/@item.Id" class="btn btn-warning">Chỉnh Sửa</a>
-                            <a href="/TheLoai/Delete/@item.Id" class="btn btn-danger">Xóa</a>
+                            <a href="TheLoai/Details/@item.Id" class="btn btn-info">Chi Tiết</a>
+                           @*  <a href="TheLoai/Edit/@item.Id" class="btn btn-warning">Chỉnh Sửa</a> *@
+                            <a href="TheLoai/Delete/@item.Id" class="btn btn-danger">Xóa</a>
                         </td>
                     </tr>
                 }
